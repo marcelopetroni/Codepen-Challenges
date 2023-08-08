@@ -1,0 +1,103 @@
+body {
+    line-height: 1.6;
+  }
+article {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+h1 {
+  font-size: 30px;
+  font-family: cursive;
+  margin: 0;
+  color: cadetBlue;
+}
+.introduction {
+  width: 850px;
+  font-family: cursive;
+}
+h2 {
+  font-family: cursive;
+  color: cadetBlue;
+  font-size: 20px;
+}
+
+/* images configuration */
+.images {
+  display: flex;
+}
+.images img {
+  position: relative;
+  right: 50px;
+  height: 250px;
+  width: 250px;
+  margin: 5px;
+}
+.images figcaption {
+  font-family: cursive;
+  font-size: 18px;
+}
+/* when the cursor is on the image */
+.images img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.flamingo img {
+  border: outset pink;
+  border-width: 20px;
+}
+.surfing img {
+  border: outset darkSlateBlue;
+  border-width: 20px;
+}
+.bonfire img {
+  border: outset brown;
+  border-width: 20px;
+}
+.party img {
+  border: outset purple;
+  border-width: 20px;
+}
+.travel img {
+  border: outset powderBlue;
+  border-width: 20px;
+}
+
+/* descriptions configuration */
+.descriptions {
+  gap: 108px;
+  display: grid; 
+  grid-template-columns: repeat(5, 1fr); 
+}
+.flamingo-description {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  text-align: center; 
+  width: 250px; 
+}
+
+.surfing-description {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  text-align: center; 
+  width: 250px; /
+}
+.bonfire-description {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  text-align: center; 
+  width: 250px; /
+}
+.party-description {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  text-align: center; 
+  width: 250px; /
+}
+.travel-description {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  text-align: center; 
+  width: 250px; /
+}
