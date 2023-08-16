@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+      background-color: LightSteelBlue; 
+  }
+  h1 {
+      margin: 0;
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      color: #154360;
+  }
+  figure {
+    text-align: center;
+      margin: 10px;
+  }
+  .caption {
+      display: flex;
+      align-items: center;
+    justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      gap: 150px;
+      font-size: 15px;
+  }
+  .buttons {
+    display: flex;
+      align-items: center;
+    justify-content: center;
+      gap: 105px;
+      margin-bottom: 15px;
+  }
+  .button {
+      cursor: pointer;
+    border: 1px solid #ccc;
+      padding: 5px;
+  }
+  .button2 {
+      cursor: pointer;
+    border: 1px solid #ccc;
+      padding: 5px;
+  }
+  
+  img {
+    width: 190px;
+    height: 160px;
+    margin: 0 auto;
+  }
+  #apply-blend-mode {
+    margin-top: 10px;
+  }
