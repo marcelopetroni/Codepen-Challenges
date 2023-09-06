@@ -1,5 +1,4 @@
 * {
-    background-color:#F5F5F5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +11,7 @@ body {
     
 }
 body main {
+    background-color:#F5F5F5;
     flex: 1 1 0;
 }
 
@@ -42,6 +42,7 @@ header h1 {
     width: 300%;
 }
 
+/* flexbox das imagens */
 .slider {
     margin: 0 auto;
     display: flex;
@@ -52,25 +53,31 @@ header h1 {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
+/* flexbox que contém os inputs e setas, aqui representa tudo em volta deles, escolhe borda, cor, etc */
 .sections {
+    user-select: none; /* impede que o usuário selecione algum item para copiar */
     padding: 5px;
     display: flex;
     justify-content: center;
-    background-color: #4169E1;
-    color: white;
-    border-radius: 10px;
+    background-color:#4169E1;
+    color: transparent;
+    border-radius: 10px; /* deixa borda circular */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
-    width: 32%;
+    width: 33%;
     margin: 25px;
 }
 
-.sections li {
-    background-color: #4169E1;
-    list-style-type: none; /* para tirar ponto ao lado do número */
+.sections a {
+    text-decoration: none;
 }
 
-.sections li a {
-    text-decoration: none; /* para tirar underline */
+/* aqui representa apenas o círculo do input rádio que foi retirado por motivos de estética e associado ao label */
+.sections li input {
+    display: none;
+}
+
+/* aqui tem cada flexbox individual, ou seja, cada caixa dentro do flexbox principal, cada número da nav */
+.sections li label {
     margin: 7px;
     padding: 0 5px 0 5px;
     color: rgb(0, 0, 0);
@@ -80,12 +87,35 @@ header h1 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.sections li a:hover {
+/* aqui representa quando o cursor passa acima do elemento */
+.sections li label:hover {
+    cursor: pointer;
     background-color: white;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-.sections li a:checked {
+.sections li input:checked{
     background-color: white;
 }
+
+/* seta para passar os items da nav */
+.scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4169E1;
+    font-size: 29px;
+    outline: none;
+    border: none;
+    transition: transform 0.3s;
+    margin: 2px;
+}
+
+/* animação da seta */
+.scroll:hover {
+    color: white;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
 
